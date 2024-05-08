@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Calculadora</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                <h1>Calculadora</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+            <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+                <div class="row row-no-gutters">
+                    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+                    <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 text-right">
+                        <input type="text" class="form-control text-right" id="cuenta" placeholder="Ejemplo: 1+1">
+                    </div>
+                    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+                </div>
+                <div class="row row-no-gutters">
+                    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+                    <button type="button" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 btn btn-primary">7</button>
+                    <button type="button" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 btn btn-primary">8</button>
+                    <button type="button" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 btn btn-primary">9</button>
+                    <button type="button" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 btn btn-info" id="division">/</button>
+                    <button type="button" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 btn btn-info" id="multiplicacion">*</button>
+                    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+                </div>
+                <div class="row row-no-gutters">
+                    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+                    <button type="button" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 btn btn-primary">4</button>
+                    <button type="button" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 btn btn-primary">5</button>
+                    <button type="button" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 btn btn-primary">6</button>
+                    <button type="button" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 btn btn-info" id="suma">+</button>
+                    <button type="button" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 btn btn-info" id="resta">-</button>
+                    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+                </div>
+                <div class="row row-no-gutters">
+                    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+                    <button type="button" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 btn btn-primary">1</button>
+                    <button type="button" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 btn btn-primary">2</button>
+                    <button type="button" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 btn btn-primary">3</button>
+                    <button type="button" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 btn btn-info">(</button>
+                    <button type="button" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 btn btn-info">)</button>
+                    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+                </div>
+                <div class="row row-no-gutters">
+                    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+                    <button type="button" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 btn btn-primary">0</button>
+                    <button type="button" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 btn btn-primary">.</button>
+                    <button type="button" class=" col-xs-2 col-sm-2col-md-2 col-lg-2 btn btn-danger" id="igual">=</button>
+                    <button type="button" class="col-xs-2 col-sm-2col-md-2 col-lg-2  btn btn-info" id="borrar">Borrar</button>
+                    <button type="button" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 btn btn-info" id="clean">Limpiar</button>
+                    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+                </div>
+            </div>
+            <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                <div class="row row-no-gutters">
+                    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+                    <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                        <h3 class="text-center" id="borrarHisto" onmouseover="this.innerHTML = 'Borrar historial'" onmouseout="this.innerHTML = 'Pulsar para borrar historial de búsqueda'">
+                            Pulsar para borrar historial de búsqueda
+                        </h3>
+                    </div>
+                    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+                </div>
+                <div class="row row-no-gutters">
+                    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                        <h4 id="resultHisto"></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
